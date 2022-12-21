@@ -22,6 +22,7 @@ namespace WebApplicationTest01
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddControllersWithViews();
         }
 
@@ -38,7 +39,7 @@ namespace WebApplicationTest01
             }
             app.UseStaticFiles();
 
-            app.UseRouting();
+            //app.UseRouting();
 
             app.UseAuthorization();
 
